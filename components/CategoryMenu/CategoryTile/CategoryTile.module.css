@@ -1,0 +1,10 @@
+.categoryTile {
+    padding: 1rem;
+    font-variant-caps: all-petite-caps;
+    cursor: pointer;
+    border-radius: 0.25rem;
+}
+
+.categoryTile:hover {
+    box-shadow: 0px 0px 3px grey;
+}
