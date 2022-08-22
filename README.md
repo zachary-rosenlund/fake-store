@@ -20,7 +20,7 @@ We would like you to spend about two hours of development time total on this cha
     - Add redux actions for adding, updating, and deleting the stored cart
     - Create a shopping cart component with controls, and functional "add to cart" buttons on ProductTile
 
-Here are some criteria we will use to evaluate these features:
+### Here are some criteria we will use to evaluate these features:
 - Understanding of state-based rendering and related logic
 - Stylistic consistency with the source material
 - Organization and readability (comments are welcome!)
@@ -35,8 +35,6 @@ Good luck!
 First, run the development server:
 
 ```bash
-npm run dev
-# or
 yarn dev
 ```
 
