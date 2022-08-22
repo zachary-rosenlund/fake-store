@@ -5,15 +5,16 @@ import Catalog from "@/components/Catalog/Catalog";
 
 
 interface CategoryProps {
+    name: string;
     products: any[];
 }
 
 function Category(props: CategoryProps): any {
-    const { products } = props;
+    const { name, products } = props;
 
     return (
         <div className={classes.root}>
-            <Catalog products={products} />
+            <Catalog name={name} products={products} />
         </div>
     )
 }
@@ -29,6 +30,7 @@ export async function getServerSideProps(context) {
 
     return {
         props: {
+            name: id,
             products
         }
     }

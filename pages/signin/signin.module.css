@@ -1,0 +1,14 @@
+.signIn {
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+}
+
+.signIn label {
+    display: flex;
+    flex-direction: column;
+}
+
+.signIn button {
+    margin-top: 1rem;
+}

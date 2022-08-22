@@ -1,8 +1,8 @@
 .siteHeader {
     display: flex;
-    align-items: center;
-    background-color: #eee;
+    background-color: #fafafa;
     width: 100%;
+    box-shadow: 1px 0 3px lightgrey;
 }
 
 .siteHeader p {
@@ -12,4 +12,17 @@
 
 .siteLogo {
     width: 17rem;
+    cursor: pointer;
+}
+
+.left {
+    display: inherit;
+    align-items: center;
+}
+
+.right {
+    display: inherit;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 2rem;
 }

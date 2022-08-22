@@ -1,14 +1,24 @@
 import CategoryMenu from '../CategoryMenu/CategoryMenu';
 import Image from 'next/image';
 import classes from './Header.module.css';
+import Link from 'next/link';
+import AccountButton from '../AccountButton';
 
 function Header() {
     return (
         <div className={classes.siteHeader}>
-            <div className={classes.siteLogo}>
-                <Image src={require('../../assets/fakestorelogo.png')} alt={''}/>
+            <div className={classes.left}>
+                <div className={classes.siteLogo}>
+                    <Link href={'/'}>
+                        <Image src={require('../../assets/fakestorelogo.png')} alt={'Website logo'}/>
+                    </Link>
+                </div>
+                <CategoryMenu />
             </div>
-            <CategoryMenu />
+            <div className={classes.right}>
+                <AccountButton />
+            </div>
+            
         </div>
     )
 }

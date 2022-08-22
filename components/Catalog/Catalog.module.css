@@ -1,5 +1,12 @@
-.catalog {
+.catalogBody {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+    width: fit-content;
+}
+
+.catalogHeader {
+    text-align: center;
+    font-variant-caps: all-petite-caps;
+    color: steelblue;
 }
