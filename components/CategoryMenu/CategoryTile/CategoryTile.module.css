@@ -6,5 +6,5 @@
 }
 
 .categoryTile:hover {
-    box-shadow: 0px 0px 3px grey;
+    box-shadow: 1px 2px 3px lightgrey;
 }
