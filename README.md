@@ -1,4 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Bargreen Technical Challenge
+
+This is a simple website built using NextJS, React, Redux, and Typescript that queries data from [Fake Store API](https://fakestoreapi.com/). 
+
+Choose one or two of the feature requests below, then fork this project and implement the chosen feature(s) in your copy. 
+We would like you to spend about two hours of development time total on this challenge, and if you choose to target just one feature request we would like to see it more fully fleshed out/complete. 
+
+1. Add a login flow
+    - Add a redux state to track user login status
+    - Update AccountButton with some conditional rendering to represent login status
+    - Hide product prices > $500 from signed out users, replace label with "Sign in to view pricing" or similar verbage
+    - Implement a sign out action
+    
+2. Add catalog filtering/sorting
+    - Create a display component for a product's `rating` property
+    - Create a sidebar component in Catalog that can sort and filter based on product price and rating
+
+3. Create the shopping cart
+    - Add a redux state that will hold a retrieved shopping cart (bonus points: if you chose to implement #1, grab the signed in user's shopping cart)
+    - Add redux actions for adding, updating, and deleting the stored cart
+    - Create a shopping cart component with controls, and functional "add to cart" buttons on ProductTile
+
+Here are some criteria we will use to evaluate these features:
+- Understanding of state-based rendering and related logic
+- Stylistic consistency with the source material
+- Organization and readability (comments are welcome!)
+- Bonus points for creativity, QoL improvements, etc., feel free to add some personal touch
+
+No need to worry about mobile styling/reactive design, assume this is a desktop only site/app
+
+Good luck!
 
 ## Getting Started
 
@@ -11,24 +41,3 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

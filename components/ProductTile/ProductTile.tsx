@@ -9,7 +9,6 @@ interface ProductTileProps {
 
 function ProductTile(props: ProductTileProps) {
     const { product } = props;
-    console.log(product);
 
     return (
         <div className={classes.productTile}>
