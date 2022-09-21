@@ -11,7 +11,7 @@ function DataWrapper({ children }: any) {
   useEffect(() => {
     dispatch(getAndSetCategories());
   }, [])
-  
+
   return children;
 }
 
